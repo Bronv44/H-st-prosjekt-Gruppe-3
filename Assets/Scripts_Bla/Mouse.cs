@@ -12,7 +12,6 @@ public class Mouse : MonoBehaviour
     public GameObject x;
     public float xLook;
 
-    Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
