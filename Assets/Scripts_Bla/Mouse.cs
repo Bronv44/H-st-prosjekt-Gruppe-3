@@ -12,6 +12,8 @@ public class Mouse : MonoBehaviour
     public GameObject x;
     public float xLook;
 
+    Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,9 @@ public class Mouse : MonoBehaviour
         Debug.Log("World Point: " + Camera.main.ScreenToWorldPoint(Input.mousePosition));
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector2(cursorPos.x, cursorPos.y);
+
+        yLook = cursorPos.y;
+        xLook = cursorPos.x;
     }
 
 }
