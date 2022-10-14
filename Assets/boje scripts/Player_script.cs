@@ -28,4 +28,6 @@ public class Player_script : MonoBehaviour
        rb.velocity = new Vector2(x, y) * RunSpeed;
       
     }
+
+
 }
