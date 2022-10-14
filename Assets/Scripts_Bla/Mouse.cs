@@ -25,6 +25,7 @@ public class Mouse : MonoBehaviour
         Debug.Log("World Point: " + Camera.main.ScreenToWorldPoint(Input.mousePosition));
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector2(cursorPos.x, cursorPos.y);
+        transform.position = new Vector2(xLook, yLook);
 
         yLook = cursorPos.y;
         xLook = cursorPos.x;
