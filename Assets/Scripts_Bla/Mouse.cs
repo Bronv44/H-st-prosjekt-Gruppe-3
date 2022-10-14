@@ -6,6 +6,11 @@ using UnityEngine.UI;
 
 public class Mouse : MonoBehaviour
 {
+    public GameObject y;
+    public float yLook;
+
+    public GameObject x;
+    public float xLook;
 
     // Start is called before the first frame update
     void Start()
