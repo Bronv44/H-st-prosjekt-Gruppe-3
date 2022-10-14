@@ -338,6 +338,62 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin
       objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236369, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236370, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_RenderMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
 --- !u!1001 &2142758456333838934
