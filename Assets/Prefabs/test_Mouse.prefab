@@ -45,6 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cff96f088c7a7074789bb3a462e53fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  y: {fileID: 4514033181335615826}
+  yLook: 0
+  x: {fileID: 4514033181335615826}
+  xLook: 0
+  anim: {fileID: 6061598518010505842, guid: 332b403fde934a04db914f1a2a31993d, type: 3}
 --- !u!212 &4514033181335615831
 SpriteRenderer:
   m_ObjectHideFlags: 0
