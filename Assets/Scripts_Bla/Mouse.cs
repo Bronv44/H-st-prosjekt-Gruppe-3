@@ -32,6 +32,8 @@ public class Mouse : MonoBehaviour
         anim.SetFloat("yLook", cursorPos.y);
         anim.SetFloat("xLook", cursorPos.x);
 
+        transform.position = new Vector3 (xLook, yLook);
+
     }
 
 }
