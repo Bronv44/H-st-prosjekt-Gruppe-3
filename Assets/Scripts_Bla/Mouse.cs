@@ -13,6 +13,9 @@ public class Mouse : MonoBehaviour
     public float xLook;
 
     public Animator anim;
+    public Vector3 cursorPos;
+    public Vector3 animPos;
+    public Transform player;
 
     // Start is called before the first frame update
     void Start()
@@ -24,15 +27,22 @@ public class Mouse : MonoBehaviour
     public void Update()
     {
         Debug.Log("World Point: " + Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         yLook = cursorPos.y;
         xLook = cursorPos.x;
 
-        anim.SetFloat("yLook", cursorPos.y);
-        anim.SetFloat("xLook", cursorPos.x);
 
         transform.position = new Vector3 (xLook, yLook);
+
+        animPos = cursorPos - player.position;
+
+        anim.SetFloat("yLook", animPos.y);
+        anim.SetFloat("xLook", animPos.x);
+
+        //Vector2 (anim) = cursorPos - transform.position. (PlayerPos)
+
+        //float = animPos (x, y)
 
     }
 
