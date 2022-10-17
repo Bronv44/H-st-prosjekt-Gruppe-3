@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mouse
+  - Pumpkin
   layers:
   - Default
   - TransparentFX

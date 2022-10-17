@@ -11,6 +11,7 @@ public class Player_script : MonoBehaviour
     public float x;
     public float y;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +23,12 @@ public class Player_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       x = Input.GetAxis("Horizontal");
+
+        x = Input.GetAxis("Horizontal");
        
        y = Input.GetAxis("Vertical");
        rb.velocity = new Vector2(x, y) * RunSpeed;
       
     }
-
 
 }

@@ -18,10 +18,10 @@ public class Pumpkin : MonoBehaviour
 
     public float time = 1f;
 
+    public Animator anim;
 
     private GameObject player;
     private bool playerInTrigger;
-
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +36,8 @@ public class Pumpkin : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && playerInTrigger == true)
         {
             TakeDamage(-10);
+            anim.SetTrigger("Water");
+            Debug.Log("Water");
         }
 
         if (CurrentHealth < 0)

@@ -397,6 +397,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &1382223908 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6061598518010505842, guid: 332b403fde934a04db914f1a2a31993d, type: 3}
+  m_PrefabInstance: {fileID: 2142758456333838934}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1382223913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2142758457046828890, guid: 332b403fde934a04db914f1a2a31993d, type: 3}
@@ -463,6 +468,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820528657849363454, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: m_Name
+      value: Pumpkin
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528657849363454, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_TagString
       value: Pumpkin
       objectReference: {fileID: 0}
     - target: {fileID: 820528658828236369, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
@@ -651,6 +660,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4514033181335615825, guid: f96bb4b48e30ef942a44f061524bd345, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1382223908}
     - target: {fileID: 4514033181335615825, guid: f96bb4b48e30ef942a44f061524bd345, type: 3}
       propertyPath: player
       value: 
