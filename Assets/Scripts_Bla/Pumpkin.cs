@@ -17,7 +17,7 @@ public class Pumpkin : MonoBehaviour
     //
 
     public float time = 1f;
-    public float timeToGrow = 1f;
+    public float timeToGrow = 100f;
 
     public Animator anim;
 

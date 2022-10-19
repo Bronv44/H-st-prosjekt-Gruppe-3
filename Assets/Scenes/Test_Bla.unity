@@ -474,6 +474,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Pumpkin
       objectReference: {fileID: 0}
+    - target: {fileID: 820528657849363455, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: timeToGrow
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 820528658828236369, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
