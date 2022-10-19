@@ -74,6 +74,8 @@ public class Pumpkin : MonoBehaviour
 
 
         anim.SetFloat("timeToGrow", timeToGrow);
+        anim.SetInteger("CurrentHealth", CurrentHealth);
+        anim.SetFloat("time", time);
 
     }
 
