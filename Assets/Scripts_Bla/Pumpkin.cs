@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Pumpkin : MonoBehaviour
 {
     public int stage;
+    public bool canLoseStage;
 
     public bool isGrown;
 
@@ -31,6 +32,7 @@ public class Pumpkin : MonoBehaviour
     {
         CurrentHealth = MaxHealth;
         healthBar.SetMaxHealth(MaxHealth);
+        canLoseStage = true;
     }
 
     // Update is called once per frame
@@ -39,6 +41,7 @@ public class Pumpkin : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && playerInTrigger == true)
         {
             TakeDamage(-10);
+            canLoseStage = true;
             anim.SetTrigger("Water");
             Debug.Log("Water");
         }
@@ -50,6 +53,12 @@ public class Pumpkin : MonoBehaviour
         else if (CurrentHealth > MaxHealth)
         {
             CurrentHealth = MaxHealth;
+        }
+
+        if (CurrentHealth == 3 && canLoseStage == true)
+        {
+            canLoseStage = false;
+            stage -= 1;
         }
 
         if (time > 0)
@@ -71,7 +80,7 @@ public class Pumpkin : MonoBehaviour
         {
             Debug.Log("Is Grown");
             timeToGrow = 50f;
-            stage +=  1;
+            stage += 1;
         }
 
         if (stage == 5)
