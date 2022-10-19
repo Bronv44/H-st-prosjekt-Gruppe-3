@@ -26,7 +26,7 @@ public class Mouse : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        Debug.Log("World Point: " + Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        //Debug.Log("World Point: " + Camera.main.ScreenToWorldPoint(Input.mousePosition));
         cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         yLook = cursorPos.y;

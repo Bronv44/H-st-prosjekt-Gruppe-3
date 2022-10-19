@@ -422,6 +422,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 820528657849363440, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528657849363440, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528657849363440, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 838548eb34a62e24fb00b00287a908b4, type: 3}
+    - target: {fileID: 820528657849363440, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 820528657849363441, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -432,7 +448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820528657849363441, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 820528657849363441, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -466,6 +482,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 820528657849363442, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528657849363442, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528657849363442, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 820528657849363454, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: m_Name
       value: Pumpkin
@@ -477,6 +505,10 @@ PrefabInstance:
     - target: {fileID: 820528657849363455, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: timeToGrow
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 820528658054342449, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 820528658828236369, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -532,7 +564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820528658828236371, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.538
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}

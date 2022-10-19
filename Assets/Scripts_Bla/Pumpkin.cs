@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Pumpkin : MonoBehaviour
 {
 
+    public bool isGrown;
 
     //
 
@@ -17,7 +18,7 @@ public class Pumpkin : MonoBehaviour
     //
 
     public float time = 1f;
-    public float timeToGrow = 100f;
+    public float timeToGrow = 100;
 
     public Animator anim;
 
@@ -64,12 +65,18 @@ public class Pumpkin : MonoBehaviour
         {
             timeToGrow -= 1 * Time.deltaTime;
         }
-        else
+
+        if (timeToGrow < 1)
         {
-            timeToGrow = 100;
+            isGrown = true;
+            Debug.Log("Is Grown");
         }
 
+
+        anim.SetFloat("timeToGrow", timeToGrow);
+
     }
+
 
     void TakeDamage(int Damage)
     {
