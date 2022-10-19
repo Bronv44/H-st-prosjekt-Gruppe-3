@@ -55,6 +55,11 @@ public class Pumpkin : MonoBehaviour
             CurrentHealth = MaxHealth;
         }
 
+        if (CurrentHealth == 0)
+        {
+            Destroy(gameObject);
+        }
+
         if (CurrentHealth == 3 && canLoseStage == true)
         {
             canLoseStage = false;
@@ -78,7 +83,6 @@ public class Pumpkin : MonoBehaviour
 
         if (timeToGrow < 1)
         {
-            Debug.Log("Is Grown");
             timeToGrow = 50f;
             stage += 1;
         }
@@ -117,14 +121,6 @@ public class Pumpkin : MonoBehaviour
             player = collision.gameObject;
             playerInTrigger = true;
     //        TriggerFeedback.SetActive(true);
-        }
-
-        if (CurrentHealth == 0)
-        {
-            if (Input.GetKeyDown(KeyCode.F) && playerInTrigger == true)
-            {
-                Destroy(gameObject);
-            }
         }
 
     }
