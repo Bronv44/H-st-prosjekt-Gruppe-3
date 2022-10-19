@@ -178,10 +178,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54e5b8c975b90c48aabb942e5625bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage: 0
+  isGrown: 0
   MaxHealth: 10
   CurrentHealth: 0
   healthBar: {fileID: 820528657984705794}
   time: 1
+  timeToGrow: 50
+  anim: {fileID: -3059718899164930460}
 --- !u!50 &820528657849363443
 Rigidbody2D:
   serializedVersion: 4
@@ -239,7 +243,7 @@ Animator:
   m_GameObject: {fileID: 820528657849363454}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b6ca98954515e5a468666ae7f9250747, type: 2}
+  m_Controller: {fileID: 9100000, guid: bbea81bcfdc65b347a6318afda43b2a4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
