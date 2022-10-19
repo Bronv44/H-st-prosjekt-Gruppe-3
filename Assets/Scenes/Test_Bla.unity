@@ -504,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820528657849363455, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: timeToGrow
-      value: 100
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 820528658054342449, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: m_Offset.y

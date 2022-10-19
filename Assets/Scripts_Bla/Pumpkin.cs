@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Pumpkin : MonoBehaviour
 {
+    public int stage;
 
     public bool isGrown;
 
@@ -18,7 +19,7 @@ public class Pumpkin : MonoBehaviour
     //
 
     public float time = 6f;
-    public float timeToGrow = 100;
+    public float timeToGrow = 50f;
 
     public Animator anim;
 
@@ -68,14 +69,26 @@ public class Pumpkin : MonoBehaviour
 
         if (timeToGrow < 1)
         {
-            isGrown = true;
             Debug.Log("Is Grown");
+            timeToGrow = 5f;
+            stage +=  1;
+        }
+
+        if (stage == 5)
+        {
+            isGrown = true;
+            Destroy(gameObject, 2f);
         }
 
 
         anim.SetFloat("timeToGrow", timeToGrow);
         anim.SetInteger("CurrentHealth", CurrentHealth);
         anim.SetFloat("time", time);
+
+        //if (CurrentHealth == 3 && stage = 3)
+        //{
+        //    timeToGrow = 50;
+        //}
 
     }
 
