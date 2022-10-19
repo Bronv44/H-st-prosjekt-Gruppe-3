@@ -11,6 +11,8 @@ public class Player_script : MonoBehaviour
     public float x;
     public float y;
 
+    public Animator anim;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,8 @@ public class Player_script : MonoBehaviour
        
        y = Input.GetAxis("Vertical");
        rb.velocity = new Vector2(x, y) * RunSpeed;
+
+        anim.SetTrigger("Water");
       
     }
 

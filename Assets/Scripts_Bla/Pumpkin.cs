@@ -17,6 +17,7 @@ public class Pumpkin : MonoBehaviour
     //
 
     public float time = 1f;
+    public float timeToGrow = 1f;
 
     public Animator anim;
 
@@ -59,12 +60,20 @@ public class Pumpkin : MonoBehaviour
             time = 1f;
         }
 
+        if (timeToGrow > 0)
+        {
+            timeToGrow -= 1 * Time.deltaTime;
+        }
+        else
+        {
+            timeToGrow = 100;
+        }
+
     }
 
     void TakeDamage(int Damage)
     {
         CurrentHealth -= Damage;
-
         healthBar.SetHealth(CurrentHealth);
     }
 
