@@ -94,6 +94,7 @@ public class Pumpkin : MonoBehaviour
         anim.SetInteger("CurrentHealth", CurrentHealth);
         anim.SetFloat("time", time);
         anim.SetInteger("stage", stage);
+        anim.SetBool("canLoseStage", canLoseStage);
 
         //if (CurrentHealth == 3 && stage = 3)
         //{
@@ -116,6 +117,14 @@ public class Pumpkin : MonoBehaviour
             player = collision.gameObject;
             playerInTrigger = true;
     //        TriggerFeedback.SetActive(true);
+        }
+
+        if (CurrentHealth == 0)
+        {
+            if (Input.GetKeyDown(KeyCode.F) && playerInTrigger == true)
+            {
+                Destroy(gameObject);
+            }
         }
 
     }
