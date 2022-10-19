@@ -70,7 +70,7 @@ public class Pumpkin : MonoBehaviour
         if (timeToGrow < 1)
         {
             Debug.Log("Is Grown");
-            timeToGrow = 5f;
+            timeToGrow = 50f;
             stage +=  1;
         }
 
@@ -84,6 +84,7 @@ public class Pumpkin : MonoBehaviour
         anim.SetFloat("timeToGrow", timeToGrow);
         anim.SetInteger("CurrentHealth", CurrentHealth);
         anim.SetFloat("time", time);
+        anim.SetInteger("stage", stage);
 
         //if (CurrentHealth == 3 && stage = 3)
         //{
