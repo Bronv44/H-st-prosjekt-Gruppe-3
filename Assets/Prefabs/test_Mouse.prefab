@@ -49,10 +49,10 @@ MonoBehaviour:
   yLook: 0
   x: {fileID: 4514033181335615826}
   xLook: 0
-  anim: {fileID: 0}
+  anim: {fileID: 6058401661954832507, guid: 3bf319ff22c150743adc2c5b3b14312d, type: 3}
   cursorPos: {x: 0, y: 0, z: 0}
   animPos: {x: 0, y: 0, z: 0}
-  player: {fileID: 0}
+  player: {fileID: 6058401661954832502, guid: 3bf319ff22c150743adc2c5b3b14312d, type: 3}
 --- !u!212 &4514033181335615831
 SpriteRenderer:
   m_ObjectHideFlags: 0
