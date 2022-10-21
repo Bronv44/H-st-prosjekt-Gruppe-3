@@ -317,9 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pumpkin: {fileID: 820528658809345769}
-  minwaitTime: 2
-  maxwaitTime: 5
-  time: 0
+  Sign: {fileID: 0}
 --- !u!61 &160728928
 BoxCollider2D:
   m_ObjectHideFlags: 0

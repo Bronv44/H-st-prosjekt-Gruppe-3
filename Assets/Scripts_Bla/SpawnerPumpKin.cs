@@ -6,28 +6,22 @@ public class SpawnerPumpkin : MonoBehaviour
 {
     public GameObject Pumpkin;
 
-    public float minwaitTime = 2f;
-    public float maxwaitTime = 5f;
+    public GameObject Sign;
 
-    public float time;
+    private bool playerInTrigger;
 
     // Start is called before the first frame update
     void Start()
     {
-        time = Random.Range(minwaitTime, maxwaitTime);
+        //
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (time > 0)
-        {
-            time -= 1 * Time.deltaTime;
-        }
-        else
+        if (Input.GetKeyDown(KeyCode.Space) && playerInTrigger == true)
         {
             Instantiate(Pumpkin, transform.position, Quaternion.identity);
-            time = Random.Range(minwaitTime, maxwaitTime);
         }
 
     }
