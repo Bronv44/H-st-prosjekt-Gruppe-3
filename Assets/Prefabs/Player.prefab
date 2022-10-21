@@ -103,6 +103,7 @@ MonoBehaviour:
   RunSpeed: 10
   x: 0
   y: 0
+  anim: {fileID: 6061598518010505842}
 --- !u!50 &2142758457046828888
 Rigidbody2D:
   serializedVersion: 4
@@ -123,7 +124,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2142758457046828891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -140,7 +141,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -148,7 +149,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.43, y: 0.36}
   m_EdgeRadius: 0
 --- !u!95 &6061598518010505842
 Animator:
