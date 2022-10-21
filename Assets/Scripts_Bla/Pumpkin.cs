@@ -90,7 +90,7 @@ public class Pumpkin : MonoBehaviour
         if (stage == 5)
         {
             isGrown = true;
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 6f);
         }
 
 
