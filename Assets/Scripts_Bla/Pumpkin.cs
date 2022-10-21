@@ -95,6 +95,7 @@ public class Pumpkin : MonoBehaviour
         {
             isGrown = true;
             Destroy(gameObject, Anim_Stage5Harvest_Pumpkin.length);
+            Respawn();
         }
 
 
