@@ -11,7 +11,7 @@ public class Pumpkin : MonoBehaviour
     public bool isGrown;
 
     //
-
+    
     public int MaxHealth = 10;
     public int CurrentHealth;
 

@@ -103,7 +103,11 @@ MonoBehaviour:
   RunSpeed: 10
   x: 0
   y: 0
+<<<<<<< Updated upstream
   anim: {fileID: 6061598518010505842}
+=======
+  test: {fileID: 2800000, guid: d625a52debc832d4494caa828367e9a1, type: 3}
+>>>>>>> Stashed changes
 --- !u!50 &2142758457046828888
 Rigidbody2D:
   serializedVersion: 4
