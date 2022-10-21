@@ -29,6 +29,8 @@ public class Pumpkin : MonoBehaviour
 
     public AnimationClip Anim_Stage5Harvest_Pumpkin;
 
+    private Spawner Spawner_Pumpkin;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -123,6 +125,12 @@ public class Pumpkin : MonoBehaviour
             player = collision.gameObject;
             playerInTrigger = true;
     //        TriggerFeedback.SetActive(true);
+
+            if (collision.gameObject.tag == "Spawner")
+            {
+                Spawner_Pumpkin.enabled = false;
+            }
+
         }
 
     }
@@ -134,6 +142,12 @@ public class Pumpkin : MonoBehaviour
             playerInTrigger = false;
     //        TriggerFeedback.SetActive(false);
         }
+
+        if (collision.gameObject.tag == "Spawner")
+        {
+            Spawner_Pumpkin.enabled = false;
+        }
+
     }
 
 }
