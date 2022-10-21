@@ -6,9 +6,7 @@ public class SpawnerPumpkin : MonoBehaviour
 {
     public GameObject Pumpkin;
 
-    public GameObject Sign;
-
-    private bool playerInTrigger;
+    public bool playerInTrigger;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +20,29 @@ public class SpawnerPumpkin : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && playerInTrigger == true)
         {
             Instantiate(Pumpkin, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            playerInTrigger = true;
+            //        TriggerFeedback.SetActive(true);
+
+        }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            playerInTrigger = false;
+            //        TriggerFeedback.SetActive(false);
+        }
     }
 
 }
