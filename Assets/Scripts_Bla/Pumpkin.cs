@@ -27,6 +27,8 @@ public class Pumpkin : MonoBehaviour
     private GameObject player;
     private bool playerInTrigger;
 
+    public AnimationClip Anim_Stage5Harvest_Pumpkin
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,7 +92,7 @@ public class Pumpkin : MonoBehaviour
         if (stage == 5)
         {
             isGrown = true;
-            Destroy(gameObject, 6f);
+            Destroy(gameObject, Anim_Stage5Harvest_Pumpkin.length);
         }
 
 
