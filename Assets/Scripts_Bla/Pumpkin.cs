@@ -27,7 +27,7 @@ public class Pumpkin : MonoBehaviour
     private GameObject player;
     private bool playerInTrigger;
 
-    public AnimationClip Anim_Stage5Harvest_Pumpkin
+    public AnimationClip Anim_Stage5Harvest_Pumpkin;
 
     // Start is called before the first frame update
     void Start()
