@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba2883f5031d2443b9650c9b6aaece4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RunSpeed: 10
+  RunSpeed: 2
   x: 0
   y: 0
   cursorPos: {x: 0, y: 0, z: 0}
