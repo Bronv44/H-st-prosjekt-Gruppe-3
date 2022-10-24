@@ -20,3 +20,4 @@ public class WaterSpell : MonoBehaviour
         rb.velocity = new Vector3(0, 1) * Speed;
     }
 }
+
