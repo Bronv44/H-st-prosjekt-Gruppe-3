@@ -100,13 +100,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba2883f5031d2443b9650c9b6aaece4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magicState: 0
-  WaterSpell: {fileID: 0}
-  WaterSpellSpawn: {fileID: 0}
   RunSpeed: 10
   x: 0
   y: 0
   cursorPos: {x: 0, y: 0, z: 0}
+  anim: {fileID: 6058401661954832507}
+  PumpkinInTrigger: 0
+  Pumpkin: {fileID: 820528657849363454, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+  Water: 0
 --- !u!50 &7748591446872052145
 Rigidbody2D:
   serializedVersion: 4
