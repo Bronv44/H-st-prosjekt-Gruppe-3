@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public bool GamePaused;
     public GameObject PauseMenu;
 
+    public Mouse mouse;
 
     public void LoadGameLevel()
     {
@@ -34,11 +35,13 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 0;
             PauseMenu.SetActive(true);
+            mouse.enabled = false;
         }
         else if (GamePaused == false)
         {
             Time.timeScale = 1;
             PauseMenu.SetActive(false);
+            mouse.enabled = true;
         }
     }
 

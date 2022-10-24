@@ -667,6 +667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GamePaused: 0
   PauseMenu: {fileID: 1898656892}
+  mouse: {fileID: 914027752}
 --- !u!4 &775724712
 Transform:
   m_ObjectHideFlags: 0
@@ -976,6 +977,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4947013962609382162, guid: eb11a1b6fd24a5d4aad06ea4e08d5cd2, type: 3}
   m_PrefabInstance: {fileID: 890452262}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &914027752 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4514033181335615825, guid: f96bb4b48e30ef942a44f061524bd345, type: 3}
+  m_PrefabInstance: {fileID: 2009604086}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff96f088c7a7074789bb3a462e53fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1116225014
 GameObject:
   m_ObjectHideFlags: 0
