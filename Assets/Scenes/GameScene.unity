@@ -1592,7 +1592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5397742090870285888, guid: 3bf319ff22c150743adc2c5b3b14312d, type: 3}
       propertyPath: m_Volume
-      value: 0.502
+      value: 0.657
       objectReference: {fileID: 0}
     - target: {fileID: 5456062011041155536, guid: 3bf319ff22c150743adc2c5b3b14312d, type: 3}
       propertyPath: RunSpeed
@@ -1648,11 +1648,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7299003882056999708, guid: 3bf319ff22c150743adc2c5b3b14312d, type: 3}
       propertyPath: m_Volume
-      value: 0.502
+      value: 0.657
       objectReference: {fileID: 0}
     - target: {fileID: 8368132212428255986, guid: 3bf319ff22c150743adc2c5b3b14312d, type: 3}
       propertyPath: m_Volume
-      value: 0.502
+      value: 0.657
       objectReference: {fileID: 0}
     - target: {fileID: 8840843115781148516, guid: 3bf319ff22c150743adc2c5b3b14312d, type: 3}
       propertyPath: m_IsActive
