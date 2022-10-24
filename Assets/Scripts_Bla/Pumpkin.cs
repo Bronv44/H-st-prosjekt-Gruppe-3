@@ -10,6 +10,8 @@ public class Pumpkin : MonoBehaviour
 
     public bool isGrown;
 
+    public bool Replant;
+
     //
     
     public int MaxHealth = 10;
@@ -61,7 +63,7 @@ public class Pumpkin : MonoBehaviour
 
         if (CurrentHealth == 0)
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 2f);
         }
 
         if (CurrentHealth == 3 && canLoseStage == true)
@@ -94,9 +96,14 @@ public class Pumpkin : MonoBehaviour
         if (stage == 5)
         {
             isGrown = true;
+            //Replant = true;
             Destroy(gameObject, Anim_Stage5Harvest_Pumpkin.length);
-            Respawn();
         }
+
+        //if (isGrown == true && Replant == true)
+        //{
+        //    Respawn();
+        //}
 
 
         anim.SetFloat("timeToGrow", timeToGrow);
@@ -112,10 +119,11 @@ public class Pumpkin : MonoBehaviour
 
     }
 
-    public void Respawn()
-    {
-        Instantiate(Sign, transform.position, Quaternion.identity);
-    }
+    //public void Respawn()
+    //{
+    //    Replant = false;
+    //    Instantiate(Sign, transform.position, Quaternion.identity);
+    //}
 
 
     void TakeDamage(int Damage)
@@ -143,6 +151,11 @@ public class Pumpkin : MonoBehaviour
             playerInTrigger = false;
     //        TriggerFeedback.SetActive(false);
         }
+    }
+
+    private void OnDestroy()
+    {
+        Instantiate(Sign, transform.position, Quaternion.identity);
     }
 
 }

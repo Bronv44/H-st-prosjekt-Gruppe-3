@@ -290,6 +290,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6058401661954832502, guid: 3bf319ff22c150743adc2c5b3b14312d, type: 3}
   m_PrefabInstance: {fileID: 6058401660573001823}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1439090451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4947013962609382161, guid: eb11a1b6fd24a5d4aad06ea4e08d5cd2, type: 3}
+  m_PrefabInstance: {fileID: 4947013962767946828}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1947522000
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +436,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Pumpkin
       objectReference: {fileID: 0}
+    - target: {fileID: 820528657849363455, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
+      propertyPath: Sign
+      value: 
+      objectReference: {fileID: 1439090451}
     - target: {fileID: 820528657849363455, guid: bc1c91609217c7942960e1fe795bd9ee, type: 3}
       propertyPath: timeToGrow
       value: 5
