@@ -12,6 +12,8 @@ public class Pumpkin : MonoBehaviour
 
     public bool Replant;
 
+    public bool isPlanted;
+
     //
     
     public int MaxHealth = 10;
@@ -39,6 +41,7 @@ public class Pumpkin : MonoBehaviour
         CurrentHealth = MaxHealth;
         healthBar.SetMaxHealth(MaxHealth);
         canLoseStage = true;
+        isPlanted = true;
     }
 
     // Update is called once per frame
@@ -122,7 +125,6 @@ public class Pumpkin : MonoBehaviour
     //public void Respawn()
     //{
     //    Replant = false;
-    //    Instantiate(Sign, transform.position, Quaternion.identity);
     //}
 
 
@@ -153,9 +155,13 @@ public class Pumpkin : MonoBehaviour
         }
     }
 
+
     private void OnDestroy()
     {
+        if(isPlanted == false)
+        {
         Instantiate(Sign, transform.position, Quaternion.identity);
+        }
     }
 
 }
