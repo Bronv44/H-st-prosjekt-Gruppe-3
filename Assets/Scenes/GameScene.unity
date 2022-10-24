@@ -363,12 +363,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 111703248596829106, guid: 1abf0175659587b45a7166c024f763e2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -465.9513
+      objectReference: {fileID: 0}
+    - target: {fileID: 111703248596829106, guid: 1abf0175659587b45a7166c024f763e2, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0115626
       objectReference: {fileID: 0}
     - target: {fileID: 111703248596829106, guid: 1abf0175659587b45a7166c024f763e2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -90.399994
+      value: -129.31563
       objectReference: {fileID: 0}
     - target: {fileID: 111703248596829106, guid: 1abf0175659587b45a7166c024f763e2, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -377,6 +381,14 @@ PrefabInstance:
     - target: {fileID: 8656259017124480889, guid: 1abf0175659587b45a7166c024f763e2, type: 3}
       propertyPath: m_Name
       value: Pause_Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656259017124480890, guid: 1abf0175659587b45a7166c024f763e2, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656259017124480891, guid: 1abf0175659587b45a7166c024f763e2, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8656259017124480893, guid: 1abf0175659587b45a7166c024f763e2, type: 3}
       propertyPath: m_Pivot.x
