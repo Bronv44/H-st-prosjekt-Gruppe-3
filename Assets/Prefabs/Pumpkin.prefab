@@ -189,7 +189,7 @@ MonoBehaviour:
   timeToGrow: 50
   anim: {fileID: -3059718899164930460}
   Anim_Stage5Harvest_Pumpkin: {fileID: 7400000, guid: 8c85246751faaf44db6dcbec28000c54, type: 2}
-  Sign: {fileID: 0}
+  Sign: {fileID: 4947013962609382161, guid: eb11a1b6fd24a5d4aad06ea4e08d5cd2, type: 3}
 --- !u!50 &820528657849363443
 Rigidbody2D:
   serializedVersion: 4
