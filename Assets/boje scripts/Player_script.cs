@@ -8,7 +8,7 @@ public class Player_script : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    public float RunSpeed = 5;
+    public float RunSpeed = 2;
     public float x;
     public float y;
 
